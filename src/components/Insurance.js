@@ -362,6 +362,7 @@ const Insurance = ({ translations }) => {
           line-height: 1.3;
           color: #ffffff;
           text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+          text-align: center;
         }
 
         .card-content {
