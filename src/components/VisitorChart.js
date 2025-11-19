@@ -104,7 +104,7 @@ const VisitorChart = ({ translations }) => {
             }}
             axisLine={{ stroke: 'rgba(255, 255, 255, 0.2)' }}
             tickLine={{ stroke: 'rgba(255, 255, 255, 0.2)' }}
-            tickFormatter={(value) => `${value}만`}
+            tickFormatter={(value) => `${value}(10K)`}
           />
           <Tooltip content={<CustomTooltip />} />
           <Area
