@@ -343,32 +343,44 @@ const Insurance = ({ translations }) => {
         }
 
         .card-header {
-          padding: 40px 30px 20px;
+          padding: 40px 20px 20px;
           text-align: center;
           position: relative;
           z-index: 2;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
         }
 
         .icon { 
-          margin-bottom: 20px;
+          margin: 0 auto 20px;
           background: transparent !important;
           filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
         
         .card-title { 
           font-size: 1.4em; 
-          margin: 0; 
+          margin: 0 auto; 
           font-weight: 700; 
           line-height: 1.3;
           color: #ffffff;
           text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
           text-align: center;
+          width: 100%;
+          display: block;
         }
 
         .card-content {
-          padding: 0 30px 40px;
+          padding: 0 20px 40px;
           position: relative;
           z-index: 2;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
         }
 
         .info-section { 
@@ -379,6 +391,8 @@ const Insurance = ({ translations }) => {
           border-radius: 16px;
           border: 1px solid rgba(255, 255, 255, 0.1);
           transition: all 0.3s ease;
+          width: 100%;
+          box-sizing: border-box;
         }
         
         .info-section:hover {
