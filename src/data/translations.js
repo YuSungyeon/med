@@ -1196,22 +1196,24 @@ const insuranceCardsAr = {
   },
 };
 
-const baseCountries = {
-  "": "Select Country",
-  Mongolia: "Mongolia",
-  America: "America",
-  Vietnam: "Vietnam",
-  Russia: "Russia",
-  Japan: "Japan",
-  China: "China",
-  "Middle East": "Middle East",
-  Korea: "Korea",
-  Other: "Other",
+const countryNamesNative = {
+  Mongolia: "Монгол",
+  America: "United States",
+  Vietnam: "Việt Nam",
+  Russia: "Россия",
+  Japan: "日本",
+  China: "中国",
+  Korea: "대한민국",
 };
 
 const en = {
   locale: "en",
-  countries: baseCountries,
+  countries: {
+    "": "Select Country",
+    ...countryNamesNative,
+    "Middle East": "Middle East",
+    Other: "Other",
+  },
   common: {
     appName: "MediBuddy",
     tagline: "Dr.Kim is Here",
@@ -1304,14 +1306,8 @@ const ko = {
   locale: "ko",
   countries: {
     "": "국가 선택",
-    Mongolia: "몽골",
-    America: "미국",
-    Vietnam: "베트남",
-    Russia: "러시아",
-    Japan: "일본",
-    China: "중국",
+    ...countryNamesNative,
     "Middle East": "중동",
-    Korea: "한국",
     Other: "기타",
   },
   common: {
@@ -1406,14 +1402,8 @@ const ja = {
   locale: "ja",
   countries: {
     "": "国を選択",
-    Mongolia: "モンゴル",
-    America: "アメリカ",
-    Vietnam: "ベトナム",
-    Russia: "ロシア",
-    Japan: "日本",
-    China: "中国",
+    ...countryNamesNative,
     "Middle East": "中東",
-    Korea: "韓国",
     Other: "その他",
   },
   common: {
@@ -1508,14 +1498,8 @@ const ru = {
   locale: "ru",
   countries: {
     "": "Выберите страну",
-    Mongolia: "Монголия",
-    America: "Америка",
-    Vietnam: "Вьетнам",
-    Russia: "Россия",
-    Japan: "Япония",
-    China: "Китай",
+    ...countryNamesNative,
     "Middle East": "Ближний Восток",
-    Korea: "Корея",
     Other: "Другое",
   },
   common: {
@@ -1610,14 +1594,8 @@ const vi = {
   locale: "vi",
   countries: {
     "": "Chọn quốc gia",
-    Mongolia: "Mông Cổ",
-    America: "Mỹ",
-    Vietnam: "Việt Nam",
-    Russia: "Nga",
-    Japan: "Nhật Bản",
-    China: "Trung Quốc",
+    ...countryNamesNative,
     "Middle East": "Trung Đông",
-    Korea: "Hàn Quốc",
     Other: "Khác",
   },
   common: {
@@ -1712,14 +1690,8 @@ const zh = {
   locale: "zh",
   countries: {
     "": "选择国家",
-    Mongolia: "蒙古",
-    America: "美国",
-    Vietnam: "越南",
-    Russia: "俄罗斯",
-    Japan: "日本",
-    China: "中国",
+    ...countryNamesNative,
     "Middle East": "中东",
-    Korea: "韩国",
     Other: "其他",
   },
   common: {
@@ -1814,14 +1786,8 @@ const mn = {
   locale: "mn",
   countries: {
     "": "Улс сонгох",
-    Mongolia: "Монгол",
-    America: "Америк",
-    Vietnam: "Вьетнам",
-    Russia: "Орос",
-    Japan: "Япон",
-    China: "Хятад",
+    ...countryNamesNative,
     "Middle East": "Ойрхи Дорнод",
-    Korea: "Солонгос",
     Other: "Бусад",
   },
   common: {
@@ -1916,14 +1882,8 @@ const ar = {
   locale: "ar",
   countries: {
     "": "اختر البلد",
-    Mongolia: "منغوليا",
-    America: "أمريكا",
-    Vietnam: "فيتنام",
-    Russia: "روسيا",
-    Japan: "اليابان",
-    China: "الصين",
+    ...countryNamesNative,
     "Middle East": "الشرق الأوسط",
-    Korea: "كوريا",
     Other: "أخرى",
   },
   common: {
